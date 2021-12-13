@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarFaculdates">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarFaculdatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarFaculdatesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCategoria">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarCategoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCategoriaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarProfesores">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarProfesoresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarProfesoresResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarProfesors">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarProfesorsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarProfesorsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearProfesor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profesor" type="tns:ModeloProfesor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ModeloProfesor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Cedula" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_facultad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_categoria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="salario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estatus" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrearProfesorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActuaizarProfesor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profesor" type="tns:ModeloProfesor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActuaizarProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActuaizarProfesorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarProfesor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="profesor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarProfesorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EliminarProfesorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarFaculdatesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarFaculdates" />
+  </wsdl:message>
+  <wsdl:message name="ListarFaculdatesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarFaculdatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarCategoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="ListarCategoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarProfesoresSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarProfesores" />
+  </wsdl:message>
+  <wsdl:message name="ListarProfesoresSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarProfesoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarProfesorsSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarProfesors" />
+  </wsdl:message>
+  <wsdl:message name="BuscarProfesorsSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarProfesorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearProfesor" />
+  </wsdl:message>
+  <wsdl:message name="CrearProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActuaizarProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:ActuaizarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="ActuaizarProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:ActuaizarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarProfesorSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="EliminarProfesorSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceProfesorSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFaculdates">
+      <wsdl:input message="tns:ListarFaculdatesSoapIn" />
+      <wsdl:output message="tns:ListarFaculdatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCategoria">
+      <wsdl:input message="tns:ListarCategoriaSoapIn" />
+      <wsdl:output message="tns:ListarCategoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesores">
+      <wsdl:input message="tns:ListarProfesoresSoapIn" />
+      <wsdl:output message="tns:ListarProfesoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProfesors">
+      <wsdl:input message="tns:BuscarProfesorsSoapIn" />
+      <wsdl:output message="tns:BuscarProfesorsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearProfesor">
+      <wsdl:input message="tns:CrearProfesorSoapIn" />
+      <wsdl:output message="tns:CrearProfesorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActuaizarProfesor">
+      <wsdl:input message="tns:ActuaizarProfesorSoapIn" />
+      <wsdl:output message="tns:ActuaizarProfesorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProfesor">
+      <wsdl:input message="tns:EliminarProfesorSoapIn" />
+      <wsdl:output message="tns:EliminarProfesorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceProfesorSoap" type="tns:WebServiceProfesorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFaculdates">
+      <soap:operation soapAction="http://tempuri.org/ListarFaculdates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCategoria">
+      <soap:operation soapAction="http://tempuri.org/ListarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesores">
+      <soap:operation soapAction="http://tempuri.org/ListarProfesores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProfesors">
+      <soap:operation soapAction="http://tempuri.org/BuscarProfesors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearProfesor">
+      <soap:operation soapAction="http://tempuri.org/CrearProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActuaizarProfesor">
+      <soap:operation soapAction="http://tempuri.org/ActuaizarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProfesor">
+      <soap:operation soapAction="http://tempuri.org/EliminarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceProfesorSoap12" type="tns:WebServiceProfesorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFaculdates">
+      <soap12:operation soapAction="http://tempuri.org/ListarFaculdates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCategoria">
+      <soap12:operation soapAction="http://tempuri.org/ListarCategoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesores">
+      <soap12:operation soapAction="http://tempuri.org/ListarProfesores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProfesors">
+      <soap12:operation soapAction="http://tempuri.org/BuscarProfesors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearProfesor">
+      <soap12:operation soapAction="http://tempuri.org/CrearProfesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActuaizarProfesor">
+      <soap12:operation soapAction="http://tempuri.org/ActuaizarProfesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProfesor">
+      <soap12:operation soapAction="http://tempuri.org/EliminarProfesor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceProfesor">
+    <wsdl:port name="WebServiceProfesorSoap" binding="tns:WebServiceProfesorSoap">
+      <soap:address location="http://localhost:8080/WebServiceProfesor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceProfesorSoap12" binding="tns:WebServiceProfesorSoap12">
+      <soap12:address location="http://localhost:8080/WebServiceProfesor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
