@@ -37,42 +37,6 @@ Proyecto03Web
  Devuelve el objeto de registro Asp.
  </summary>
 </member>
-<member name="T:Proyecto03Web.WSEstudiante.modeloEstudiante">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.Cedula">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.Nombre">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.Apellido">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.Direccion">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.celular">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.correo">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.cod_facultad">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.cod_carrera">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.indice_academico">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.sexo">
-<remarks/>
-</member>
-<member name="P:Proyecto03Web.WSEstudiante.modeloEstudiante.estatus">
-<remarks/>
-</member>
 <member name="T:Proyecto03Web.WSE.ModeloFacultad">
 <remarks/>
 </member>
@@ -118,41 +82,149 @@ Proyecto03Web
 <member name="P:Proyecto03Web.WSE.modeloEstudiante.estatus">
 <remarks/>
 </member>
-<member name="T:Proyecto03Web.WSProfesores.ModeloProfesor">
+<member name="T:Proyecto03Web.WSP.ModeloFacultad">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.Cedula">
+<member name="P:Proyecto03Web.WSP.ModeloFacultad.Codigo">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.codigo">
+<member name="P:Proyecto03Web.WSP.ModeloFacultad.Facultad">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.Nombre">
+<member name="T:Proyecto03Web.WSP.ModeloProfesor">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.Apellido">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.Cedula">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.Direccion">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.codigo">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.celular">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.Nombre">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.correo">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.Apellido">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.cod_facultad">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.Direccion">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.cod_categoria">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.celular">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.salario">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.correo">
 <remarks/>
 </member>
-<member name="P:Proyecto03Web.WSProfesores.ModeloProfesor.estatus">
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.cod_facultad">
 <remarks/>
+</member>
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.cod_categoria">
+<remarks/>
+</member>
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.salario">
+<remarks/>
+</member>
+<member name="P:Proyecto03Web.WSP.ModeloProfesor.estatus">
+<remarks/>
+</member>
+<member name="F:Proyecto03Web._Default._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label4">
+<summary>
+Control Label4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label5">
+<summary>
+Control Label5.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label6">
+<summary>
+Control Label6.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label7">
+<summary>
+Control Label7.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label8">
+<summary>
+Control Label8.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label9">
+<summary>
+Control Label9.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label10">
+<summary>
+Control Label10.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web._Default._Label11">
+<summary>
+Control Label11.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member>
 <member name="F:Proyecto03Web.Estudiantes._ParrafoDinamico">
 <summary>
@@ -166,24 +238,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:Proyecto03Web.Estudiantes._Timer1">
 <summary>
 Control Timer1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Proyecto03Web.Estudiantes._btnlistarE">
-<summary>
-Control btnlistarE.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Proyecto03Web.Estudiantes._DataGridViewEstudiantes">
-<summary>
-Control DataGridViewEstudiantes.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -433,9 +487,297 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Proyecto03Web.presentacion._Label1">
+<member name="F:Proyecto03Web.Estudiantes._btnlistarE">
+<summary>
+Control btnlistarE.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Estudiantes._DataGridViewEstudiantes">
+<summary>
+Control DataGridViewEstudiantes.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._ParrafoDinamico">
+<summary>
+Control ParrafoDinamico.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Timer1">
+<summary>
+Control Timer1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._btnbuscar">
+<summary>
+Control btnbuscar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._btnAgregar">
+<summary>
+Control btnAgregar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._btnActualizar">
+<summary>
+Control btnActualizar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._btnEliminar">
+<summary>
+Control btnEliminar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._btnLimpiar">
+<summary>
+Control btnLimpiar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label12">
+<summary>
+Control Label12.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtcodigo">
+<summary>
+Control txtcodigo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label1">
 <summary>
 Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtCedula">
+<summary>
+Control txtCedula.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtnombre">
+<summary>
+Control txtnombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtapellido">
+<summary>
+Control txtapellido.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label4">
+<summary>
+Control Label4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtdireccion">
+<summary>
+Control txtdireccion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label5">
+<summary>
+Control Label5.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtcelular">
+<summary>
+Control txtcelular.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label6">
+<summary>
+Control Label6.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtcorreo">
+<summary>
+Control txtcorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label7">
+<summary>
+Control Label7.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._txtsalario">
+<summary>
+Control txtsalario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label8">
+<summary>
+Control Label8.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._cbFacultad">
+<summary>
+Control cbFacultad.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label9">
+<summary>
+Control Label9.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._cbcategoria">
+<summary>
+Control cbcategoria.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._Label11">
+<summary>
+Control Label11.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._cbestado">
+<summary>
+Control cbestado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._btnlistarP">
+<summary>
+Control btnlistarP.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Proyecto03Web.Profesores._DataGridViewProfesores">
+<summary>
+Control DataGridViewProfesores.
 </summary>
 <remarks>
 Campo generado automáticamente.

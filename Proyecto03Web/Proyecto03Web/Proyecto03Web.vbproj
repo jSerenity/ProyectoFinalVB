@@ -147,25 +147,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <None Include="Connected Services\WSEstudiante\WebService1.disco" />
-    <None Include="Connected Services\WSEstudiante\configuration91.svcinfo" />
-    <None Include="Connected Services\WSEstudiante\configuration.svcinfo" />
-    <None Include="Connected Services\WSEstudiante\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.vb</LastGenOutput>
-    </None>
     <Content Include="Connected Services\WSE\Proyecto03Web.WSE.ModeloFacultad.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\WSE\WebService1.wsdl" />
-    <None Include="Connected Services\WSProfesores\WebServiceProfesor.disco" />
-    <None Include="Connected Services\WSProfesores\configuration91.svcinfo" />
-    <None Include="Connected Services\WSProfesores\configuration.svcinfo" />
-    <None Include="Connected Services\WSProfesores\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.vb</LastGenOutput>
-    </None>
     <None Include="Connected Services\WSE\WebService1.disco" />
     <None Include="Connected Services\WSE\configuration91.svcinfo" />
     <None Include="Connected Services\WSE\configuration.svcinfo" />
@@ -173,7 +158,16 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </None>
-    <Content Include="Contact.aspx" />
+    <Content Include="Connected Services\WSP\Proyecto03Web.WSP.ModeloFacultad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WSP\WebServiceProfesor.disco" />
+    <None Include="Connected Services\WSP\configuration91.svcinfo" />
+    <None Include="Connected Services\WSP\configuration.svcinfo" />
+    <None Include="Connected Services\WSP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -192,12 +186,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Connected Services\WSEstudiante\WebService1.wsdl" />
     <Content Include="My Project\DataSources\System.Data.DataSet.datasource" />
     <Content Include="My Project\DataSources\System.Data.DataTable.datasource" />
-    <None Include="Connected Services\WSProfesores\WebServiceProfesor.wsdl" />
+    <None Include="Connected Services\WSP\WebServiceProfesor.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="presentacion.aspx" />
     <Content Include="Profesores.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -233,34 +225,15 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="About.aspx.designer.vb">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="About.aspx.vb">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Connected Services\WSEstudiante\Reference.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\WSE\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\WSProfesores\Reference.vb">
+    <Compile Include="Connected Services\WSP\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
@@ -297,13 +270,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="presentacion.aspx.designer.vb">
-      <DependentUpon>presentacion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="presentacion.aspx.vb">
-      <DependentUpon>presentacion.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Profesores.aspx.designer.vb">
       <DependentUpon>Profesores.aspx</DependentUpon>
@@ -372,9 +338,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WSEstudiante\" />
     <WCFMetadataStorage Include="Connected Services\WSE\" />
-    <WCFMetadataStorage Include="Connected Services\WSProfesores\" />
+    <WCFMetadataStorage Include="Connected Services\WSP\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

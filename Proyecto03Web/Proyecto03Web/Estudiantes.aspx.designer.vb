@@ -32,24 +32,6 @@ Partial Public Class Estudiantes
     Protected WithEvents Timer1 As Global.System.Web.UI.Timer
 
     '''<summary>
-    '''Control btnlistarE.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnlistarE As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control DataGridViewEstudiantes.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents DataGridViewEstudiantes As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
     '''Control btnbuscar.
     '''</summary>
     '''<remarks>
@@ -291,4 +273,22 @@ Partial Public Class Estudiantes
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents cbestado As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control btnlistarE.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnlistarE As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control DataGridViewEstudiantes.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DataGridViewEstudiantes As Global.System.Web.UI.WebControls.GridView
 End Class

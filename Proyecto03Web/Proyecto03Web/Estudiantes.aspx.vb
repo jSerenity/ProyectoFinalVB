@@ -80,12 +80,13 @@ Public Class Estudiantes
         ElseIf Not objEstudiante.ValidarNumero(txtCedula.Text) Then
             MessageBoxShow("cedula: " + txtCedula.Text + " no valida, solo números", True)
         Else
+            Dim dtfacultad = objEstudiante.ListarFaculdates()
+            cbFacultad.DataSource = dtfacultad
+            cbFacultad.DataBind()
+            cbFacultad.Items.Insert(0, New ListItem("--Seleccionar Facultad--", "0"))
+
             Dim Dt As DataSet = objEstudiante.BuscarEstudiantes(txtCedula.Text)
             If (Dt.Tables(0).Rows.Count > 0) Then
-                Dim dtfacultad = objEstudiante.ListarFaculdates()
-                cbFacultad.DataSource = dtfacultad
-                cbFacultad.DataBind()
-                cbFacultad.Items.Insert(0, New ListItem("--Seleccionar Facultad--", "0"))
 
                 txtCedula.Enabled = False
                 btnActualizar.Visible = True
@@ -199,7 +200,7 @@ Public Class Estudiantes
                     btnAgregar.Visible = False
                     btnActualizar.Visible = True
                     btnEliminar.Visible = True
-                    txtCedula.Visible = False
+                    txtCedula.Enabled = False
                     listarTable()
                     MessageBoxShow("Estudiante con cedula: " + txtCedula.Text + " Nombre: " + txtnombre.Text + " fue agregado")
                 Else
